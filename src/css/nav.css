@@ -1,0 +1,15 @@
+nav {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+nav a {
+    font-size: 20px;
+    padding: 0 8px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: blue;
+}
