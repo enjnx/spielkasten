@@ -1,9 +1,16 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 100px 250px 250px;
+    grid-template-columns: 70px 50px 250px 305px 250px;
     margin: 24px 0;
 }
 
-.grid-item {
+.grid-container>div {
     text-align: left;
+}
+
+.grid-container>div ul {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }

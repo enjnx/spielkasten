@@ -3,9 +3,10 @@ import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import './css/header.css';
 import './css/nav.css';
 import './css/main.css';
+import './css/grid.css'
 import logo from './img/logo.svg';
-import Mitarbeiter from "./pages/Mitarbeiter";
-import User from "./pages/User";
+import Todos from "./pages/Todos";
+import Foto from "./pages/Foto";
 
 function Home() {
   return (
@@ -25,13 +26,13 @@ function App() {
       <BrowserRouter>
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/page/mitarbeiter">Mitarbeiter</Link>
-          <Link to="/page/user">User</Link>
+          <Link to="/page/Foto">Foto</Link>
+          <Link to="/page/todos">Todos</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/page/mitarbeiter" element={<Mitarbeiter />} />
-          <Route path="/page/user" element={<User />} />
+          <Route path="/page/foto" element={<Foto />} />
+          <Route path="/page/todos" element={<Todos />} />
         </Routes>
       </BrowserRouter>
     </>
