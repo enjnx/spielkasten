@@ -8,24 +8,21 @@ interface ComponentProps {
 function Component({ data, blockType }: ComponentProps) {
   let renderedItems = null;
 
+
   if (blockType === 'album') {
     renderedItems = data.map((item, index) => (
-      <div key={index}>
-        <ul>
-          <li>AlbumID: {item.albumId}</li>
-          <li>Thumb: {item.thumbnailUrl}</li>
-          <li>Url: {item.url}</li>
-        </ul>
+      <div key={index} className='grid-container'>
+        <div>AlbumID: {item.albumId}</div>
+        <div>Thumb: {item.thumbnailUrl}</div>
+        <div>Url: {item.url}</div>
       </div>
     ));
   } else if (blockType === 'todos') {
     renderedItems = data.map((item, index) => (
-      <div key={index}>
-        <ul>
-          <li>UserId: {item.userId}</li>
-          <li>ID: {item.id}</li>
-          <li>Title: {item.title}</li>
-        </ul>
+      <div key={index} className='grid-container'>
+        <div>UserId: {item.userId}</div>
+        <div>ID: {item.id}</div>
+        <div>Title: {item.title}</div>
       </div>
     ));
   }

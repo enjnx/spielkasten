@@ -5,9 +5,7 @@ function Tabellenkopf(props: string[]) {
         <div className="grid-container">
             {header.map((header, index) => (
                 <div key={index}>
-                    <ul>
-                        <li>{header}</li>
-                    </ul>
+                    <div>{header}</div>
                 </div>
             ))}
         </div>
