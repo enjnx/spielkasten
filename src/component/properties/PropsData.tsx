@@ -1,10 +1,9 @@
 export interface PropsData {
-    id: number;
+    albumId: number;
     userId: number;
-    name: string;
+    id: number,
     title: string;
-    completed: string;
     url: string;
-    thumbnailUrl: string;    
+    thumbnailUrl: string;
 }
 

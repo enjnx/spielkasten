@@ -1,11 +1,11 @@
-import { useFetchData } from "./useFetchData";
+/* import { useFetchData } from "./useFetchData"; */
 
 function Tabelle({ url }: { url: string }) {
-    const data = useFetchData(url);
+   /*  const data = useFetchData(url); */
 
     return (
         <>
-            {data.map((item, index) => (
+            {/* {data.map((item, index) => (
                 <div className="grid-container" key={index}>
                     {Object.values(item).map((value, innerIndex) => (
                         <div>
@@ -15,7 +15,7 @@ function Tabelle({ url }: { url: string }) {
                         </div>
                     ))}
                 </div>
-            ))}
+            ))} */}
         </>
     )
 }

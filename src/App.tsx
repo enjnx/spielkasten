@@ -5,8 +5,8 @@ import './css/nav.css';
 import './css/main.css';
 import './css/grid.css'
 import logo from './img/logo.svg';
-import Todos from "./pages/Todos";
 import Foto from "./pages/Foto";
+import Todos from "./pages/Todos";
 
 function Home() {
   return (
@@ -26,7 +26,7 @@ function App() {
       <BrowserRouter>
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/page/Foto">Foto</Link>
+          <Link to="/page/foto">Foto</Link>
           <Link to="/page/todos">Todos</Link>
         </nav>
         <Routes>

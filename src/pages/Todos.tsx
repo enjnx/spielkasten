@@ -1,26 +1,18 @@
-import Tabelle from "../component/layout/Tabelle";
+import ListComponent from "../component/layout/ListComponent";
 import Tabellenkopf from "../component/layout/Tabellenkopf";
-import { baseUrl } from "../component/properties/BaseUrl";
 
 function Todos() {
-    const headerProperties = [
-        "userId",
-        "id",
-        "title",
-        "completed",
-        ""
-    ]
+    const apiUrl = 'https://jsonplaceholder.typicode.com/todos';
 
-    const url = baseUrl + 'todos';
-
+    const headerProperties = ['userId', 'id', 'title'];
 
     return (
         <div className="main">
             <h1>Todos</h1>
             <Tabellenkopf {...headerProperties} />
-            <Tabelle url={url} />            
+            <ListComponent apiUrl={apiUrl} blockType="todos" /> {/* blockType direkt als Prop übergeben */}
         </div>
-    )
+    );
 }
 
 export default Todos;

@@ -1,25 +1,18 @@
-import Tabelle from "../component/layout/Tabelle";
+import ListComponent from '../component/layout/ListComponent';
 import Tabellenkopf from "../component/layout/Tabellenkopf";
-import { baseUrl } from "../component/properties/BaseUrl";
 
 function Foto() {
-    const headerProperties = [
-        "albumId",
-        "id",
-        "title",
-        "Url",
-        "thumbnailUrl"
-    ]
+    const apiUrl = 'https://jsonplaceholder.typicode.com/photos'
 
-    const url = baseUrl + 'photos';
+    const headerProperties = ['albumId', "Thumb", "url",];
 
     return (
         <div className="main">
             <h1>Foto</h1>
             <Tabellenkopf {...headerProperties} />
-            <Tabelle url={url} />  
+            <ListComponent apiUrl={apiUrl} blockType="album" />
         </div>
-    )
-}
+    );
+};
 
 export default Foto;
